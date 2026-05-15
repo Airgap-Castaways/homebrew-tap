@@ -5,21 +5,21 @@
 class Deck < Formula
   desc "Structured workflows for air-gapped operations."
   homepage "https://github.com/Airgap-Castaways/deck"
-  version "0.2.3"
+  version "0.2.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.3/deck_0.2.3_darwin_amd64.tar.gz"
-      sha256 "12d8a2641f50f7b0e248bdb53feed2b786148f127d905035619fb06795fc6434"
+      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.4/deck_0.2.4_darwin_amd64.tar.gz"
+      sha256 "0fb7889db0393714165c415382cadf2175de6bf10cadcbfd949c69f1b7ca5187"
 
       define_method(:install) do
         bin.install "deck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.3/deck_0.2.3_darwin_arm64.tar.gz"
-      sha256 "f6272bf40101807d03647de5eea64d9fd5e451b3663cfd0a366ce7723c59ed11"
+      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.4/deck_0.2.4_darwin_arm64.tar.gz"
+      sha256 "5c5c966749f537f2deb045fcc6ae1b278b458183730fab85dedf24695fd210e8"
 
       define_method(:install) do
         bin.install "deck"
@@ -29,15 +29,15 @@ class Deck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.3/deck_0.2.3_linux_amd64.tar.gz"
-      sha256 "0fec85d27de2e2c92e6ee77f002b4ad22daf756502d682aaf47beaf3acd8c5ce"
+      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.4/deck_0.2.4_linux_amd64.tar.gz"
+      sha256 "c58f5b29cf8f23b857b499a71ccd4d1f2f7b9126c914375ce376d93298008745"
       define_method(:install) do
         bin.install "deck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.3/deck_0.2.3_linux_arm64.tar.gz"
-      sha256 "c922a2b53adf72f98e123afdbe6d7af1bc0fc488fae3530ec0c7d483b7f50463"
+      url "https://github.com/Airgap-Castaways/deck/releases/download/v0.2.4/deck_0.2.4_linux_arm64.tar.gz"
+      sha256 "d90d828f8a5a0c4c65d8bebd66973fcb535c7dabcc0eea66c653e2c55285f473"
       define_method(:install) do
         bin.install "deck"
       end
